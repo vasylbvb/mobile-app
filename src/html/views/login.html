@@ -1,0 +1,59 @@
+<% var data = {
+title: "Login page"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="login-grid-container">
+    <header class="header">
+        <div class="page-heading">
+            <h1>Appname</h1>
+        </div>
+    </header>
+    <main id="main">
+        <div class="form-box">
+            <div class="form-box--head">
+                <h2 class="form-box__title">Inloggen</h2>
+            </div>
+            <div class="form-box--body">
+                <p class="form-box__desc">
+                    Hier komt een welkomst stukje tekst. Hier komt een welkomst stukje tekst. Hier komt een welkomst stukje tekst.
+                </p>
+                <form action="#" method="post" id="loginForm" class="form-box__form">
+                    <div class="form-box__form-group">
+                        <label for="login-name" class="sr-only">Gebruikersnaam</label>
+                        <input type="text" id="login-name" placeholder="Gebruikersnaam" name="login-name" required>
+                    </div>
+                    <div class="form-box__form-group">
+                        <label for="login-pass" class="sr-only">Password</label>
+                        <input type="password" id="login-pass" placeholder="Password" name="login-pass" autocomplete="current-password" required>
+                        <button type="button"  class="pass-show">Tonen</button>
+                    </div>
+                    <div class="form-box__form-group columns-between">
+                        <div class="form-box__form-check">
+                            <input type="checkbox" id="login-remember" name="login-remember">
+                            <label for="login-remember">Onthoud mij</label>
+                        </div>
+                        <div class="form-box__form-link">
+                            <a href="#">Wachtwoord vergeten?</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box--footer">
+                <a href="#" role="button" class="form-box__btn prev">
+                    <span class="icon"></span>
+                    <span class="text">Account maken</span>
+                </a>
+                <button type="submit" form="loginForm" class="form-box__btn next">
+                    <span class="icon"></span>
+                    <span class="text">Inloggen</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <div class="footer">
+        <div class="footer-links">
+            <a href="#">Privacy statement</a>
+        </div>
+    </div>
+</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

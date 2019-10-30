@@ -1,0 +1,104 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $j-green;
+  font-family: "SourceSansPro-Regular", Arial, sans-serif;
+  font-size: $global-font-size;
+  color: $j-black;
+}
+
+input {
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $j-darkgrey;
+  }
+
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: $j-darkgrey;
+  }
+
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: $j-darkgrey;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $j-darkgrey;
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: $custom-transition-3;
+
+  &:hover,
+  &:visited,
+  &:link {
+    text-decoration: none;
+  }
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+  height: auto !important;
+  margin: auto !important;
+  overflow: visible !important;
+  width: auto !important;
+  white-space: normal !important;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-device-width:1024px) {
+  input[type="color"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="email"],
+  input[type="month"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="time"],
+  input[type="url"],
+  input[type="week"],
+  select:focus,
+  textarea {
+    font-size: 1rem !important;
+  }
+}
+
+h1 {
+  margin: 1em 0;
+  color: $j-white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.25;
+}
