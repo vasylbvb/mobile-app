@@ -2,7 +2,7 @@
 title: "Login page"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
-<div class="login-grid-container">
+<div class="form-grid-container">
     <header class="header">
         <div class="page-heading">
             <h1>Appname</h1>
@@ -18,13 +18,13 @@ title: "Login page"
                     Hier komt een welkomst stukje tekst. Hier komt een welkomst stukje tekst. Hier komt een welkomst stukje tekst.
                 </p>
                 <form action="#" method="post" id="loginForm" class="form-box__form">
-                    <div class="form-box__form-group">
+                    <div class="form-box__form-group apart">
                         <label for="login-name" class="sr-only">Gebruikersnaam</label>
                         <input type="text" id="login-name" placeholder="Gebruikersnaam" name="login-name" required>
                     </div>
                     <div class="form-box__form-group">
-                        <label for="login-pass" class="sr-only">Password</label>
-                        <input type="password" id="login-pass" placeholder="Password" name="login-pass" autocomplete="current-password" required>
+                        <label for="login-pass" class="sr-only">Wachtwoord</label>
+                        <input type="password" id="login-pass" placeholder="Wachtwoord" name="login-pass" autocomplete="current-password" required>
                         <button type="button"  class="pass-show">Tonen</button>
                     </div>
                     <div class="form-box__form-group columns-between">

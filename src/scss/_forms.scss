@@ -1,4 +1,4 @@
-.login-grid-container {
+.form-grid-container {
   min-height: inherit;
   display: grid;
   grid-template-columns: 1fr rem-calc(788) 1fr;
@@ -51,7 +51,7 @@
       display: flex;
       width: 100%;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
       margin-top: auto;
       padding: 1.25rem $spacing-gutter;
       background-color: $j-lightblack;
@@ -75,10 +75,14 @@
       display: flex;
       align-items: center;
       width: 100%;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       position: relative;
 
-      &:first-child {
+      &:last-child {
+        padding-top: 0.625rem;
+      }
+
+      &.apart {
         margin-bottom: rem-calc(55);
       }
 
@@ -235,6 +239,10 @@
       line-height: 1.25;
       transition: $custom-transition-3;
 
+      &:nth-child(2) {
+        margin-left: auto;
+      }
+
       &:hover {
         color: $j-green;
       }
@@ -271,18 +279,18 @@
       }
     }
 
-    @media screen and (min-width: 1200px) {
-      &--head,
-      &--body {
-        max-width: 62%;
-        margin: 0 auto;
-      }
-    }
-
     @media screen and (min-width: 768px) {
       &--head,
       &--body {
         max-width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      &--head,
+      &--body {
+        max-width: 62%;
         margin: 0 auto;
       }
     }
@@ -316,7 +324,7 @@
 }
 
 @media screen and (max-width: 991.98px) {
-  .login-grid-container {
+  .form-grid-container {
     grid-template-columns: $spacing-unit 1fr $spacing-unit;
   }
 }

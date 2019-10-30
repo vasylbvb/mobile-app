@@ -1,0 +1,61 @@
+<% var data = {
+title: "Sign up page"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="form-grid-container">
+    <header class="header">
+        <div class="page-heading">
+            <h1>Appname</h1>
+        </div>
+    </header>
+    <main id="main">
+        <div class="form-box">
+            <div class="form-box--head">
+                <h2 class="form-box__title">Account aanmaken</h2>
+            </div>
+            <div class="form-box--body">
+                <p class="form-box__desc">
+                    Hier komt een welkomst stukje tekst. Hier komt een welkomst stukje tekst. Hier komt een welkomst stukje tekst.
+                </p>
+                <form action="#" method="post" id="signupForm" class="form-box__form">
+                    <div class="form-box__form-group">
+                        <label for="signup-mail" class="sr-only">E-mail</label>
+                        <input type="email" id="signup-mail" placeholder="E-mail" name="signup-mail" required>
+                    </div>
+                    <div class="form-box__form-group">
+                        <label for="signup-name" class="sr-only">Gebruikersnaam</label>
+                        <input type="text" id="signup-name" placeholder="Gebruikersnaam" name="signup-name" required>
+                    </div>
+                    <div class="form-box__form-group">
+                        <label for="signup-pass1" class="sr-only">Wachtwoord</label>
+                        <input type="password" id="signup-pass1" placeholder="Wachtwoord" name="signup-pass1" required>
+                        <button type="button"  class="pass-show">Tonen</button>
+                    </div>
+                    <div class="form-box__form-group">
+                        <label for="signup-pass2" class="sr-only">Wachtwoord bevestigen</label>
+                        <input type="password" id="signup-pass2" placeholder="Wachtwoord bevestigen" name="signup-pass2" required>
+                        <button type="button"  class="pass-show">Tonen</button>
+                    </div>
+                    <div class="form-box__form-group">
+                        <div class="form-box__form-check">
+                            <input type="checkbox" id="signup-agree" name="signup-agree">
+                            <label for="signup-agree">Ik ga akkoord met de algemene voorwaarden</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box--footer">
+                <button type="submit" form="signupForm" class="form-box__btn next">
+                    <span class="icon"></span>
+                    <span class="text">Volgende</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <div class="footer">
+        <div class="footer-links">
+            <a href="#">Privacy statement</a>
+        </div>
+    </div>
+</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
