@@ -326,5 +326,11 @@
 @media screen and (max-width: 991.98px) {
   .form-grid-container {
     grid-template-columns: $spacing-unit 1fr $spacing-unit;
+
+    .footer {
+      .footer-links {
+        padding: 1.25rem $spacing-unit;
+      }
+    }
   }
 }

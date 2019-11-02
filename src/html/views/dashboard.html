@@ -1,0 +1,18 @@
+<% var data = {
+title: "Dashboard page"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="page-grid-container">
+    <%= _.template(require('./../includes/content-header.html').default)(data) %>
+    <main id="main">
+        <div class="page-intro-block">
+            <div class="page-intro-block__title">Welkom <span id="userName">Joey</span>,</div>
+            <h1 class="page-intro-block__text">Start hieronder een nieuwe meting.</h1>
+            <div class="action-btn-box">
+                <a href="#" role="button" class="action-btn">Nieuwe meting</a>
+            </div>
+        </div>
+    </main>
+    <%= _.template(require('./../includes/content-footer.html').default)(data) %>
+</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
