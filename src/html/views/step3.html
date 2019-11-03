@@ -1,0 +1,67 @@
+<% var data = {
+title: "Step 1"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="page-grid-container">
+    <%= _.template(require('./../includes/content-header.html').default)(data) %>
+    <main id="main">
+        <div class="page-cards">
+            <div class="page-cards__heading">
+                <div class="back-btn-box">
+                    <a href="#" role="button" class="back-btn">
+                        <span class="icon"></span>
+                        <span class="text">Terug</span>
+                    </a>
+                </div>
+                <div class="page-cards__heading-content">
+                    <h1 class="page-cards__heading-title" style="margin: 3.125rem 0;">Uitkomst</h1>
+                </div>
+            </div>
+            <div class="page-cards__body">
+                <div class="page-cards__row">
+                    <!--Card result start-->
+                    <div class="page-cards__col full">
+                        <div class="page-card--wide">
+                            <div class="page-card--wide-row">
+                                <div class="page-card--wide-col">
+                                    <h2 class="page-card--wide-title">Zeer lage sensitiviteit</h2>
+                                    <div class="page-card--wide-text">
+                                        <p>Het gedrag van de opvoeder kenmerkt zich door <strong>gerichtheid op de eigen
+                                            behoeften of belangen</strong> en/of de opvoeder is onbeschikbaar en
+                                            niet-ontvankelijk voor de signalen, stemmingen, interesses en behoeften van
+                                            het kind. De opvoeder reageert nauwelijks of niet afgestemd op het kind en
+                                            geeft geen blijk van besef van de behoeften van het kind. Als de opvoeder
+                                            reageert op stress bij het kind, dan is de reactie laat of ongepast. De
+                                            opvoeder laat intrusief gedrag zien of is emotioneel onbeschikbaar. Zeer
+                                            lage sensitiviteit is zeer zorgelijk en een interventie gericht op de
+                                            opvoeder-kind relatie is noodzakelijk.
+                                        </p>
+                                    </div>
+                                    <a href="mailto:somemail@example.com" role="button" class="mail-btn">
+                                        <span class="icon"></span>
+                                        <span class="text">Mail uitkomst</span>
+                                    </a>
+                                </div>
+                                <div class="page-card--wide-col">
+                                    <div class="page-card--wide-img">
+                                        <img src="img/card-1.jpg" alt="result image">
+                                    </div>
+                                    <div class="page-card--wide-pager">
+                                        <ul class="pager">
+                                            <li class="pager-item"></li>
+                                            <li class="pager-item"></li>
+                                            <li class="pager-item active"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card result end-->
+                </div>
+            </div>
+        </div>
+    </main>
+    <%= _.template(require('./../includes/content-footer.html').default)(data) %>
+</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
