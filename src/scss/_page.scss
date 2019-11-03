@@ -26,6 +26,48 @@
     }
   }
 
+  .back-btn {
+    display: inline-flex;
+    align-items: center;
+    min-width: rem-calc(150);
+    min-height: rem-calc(50);
+    padding: $spacing-unit 1.25rem;
+    border: 1px solid $j-white;
+    border-radius: 25px;
+    background-color: transparent;
+    color: $j-white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.29;
+    transition: background-color 0.3s linear, color 0.3s linear;
+
+    .icon {
+      display: inline-block;
+      vertical-align: middle;
+      width: 15px;
+      height: 15px;
+      margin-right: 6px;
+      background: transparent url('../img/left-arrow.svg') no-repeat center center/contain;
+      filter: brightness(0) invert(1);
+      transition: filter 0.3s linear;
+    }
+
+    .text {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      background-color: $j-white;
+      color: $j-black;
+
+      .icon {
+        filter: brightness(0) invert(0);
+      }
+    }
+  }
+
   .header {
     grid-area: header;
     background-color: $j-darkgreen;

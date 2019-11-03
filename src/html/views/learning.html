@@ -1,0 +1,46 @@
+<% var data = {
+title: "E-learning"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="form-grid-container">
+    <header class="header">
+        <div class="page-heading">
+            <!--<h1>Appname</h1>-->
+            <div class="page-heading__logo">
+                <img src="img/logo.png" alt="logotype of the application">
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="form-box">
+            <div class="form-box--head">
+                <h2 class="form-box__title">E-learning</h2>
+            </div>
+            <div class="form-box--body">
+                <p class="form-box__desc">
+                    Hier komt een welkomst stukje tekst. Hier komt een welkomst stukje tekst. Hier komt een welkomst stukje tekst.
+                </p>
+                <form action="#" method="post" id="learningForm" class="form-box__form">
+                    <div class="form-box__form-group">
+                        <div class="form-box__form-radio">
+                            <input type="radio" id="positiveAnswer" name="learning-questions">
+                            <label for="positiveAnswer">Ja, ik heb de e-learning succesvol afgerond</label>
+                        </div>
+                        <div class="form-box__form-radio">
+                            <input type="radio" id="negativeAnswer" name="learning-questions">
+                            <label for="negativeAnswer">Nee, ik heb de e-learning niet gemaakt of afgerond</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box--footer">
+                <button type="submit" form="learningForm" class="form-box__btn next">
+                    <span class="icon"></span>
+                    <span class="text">Volgende</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <%= _.template(require('./../includes/content-footer.html').default)(data) %>
+</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -1,0 +1,34 @@
+<% var data = {
+title: "Confirm"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="form-grid-container">
+    <header class="header">
+        <div class="page-heading">
+            <!--<h1>Appname</h1>-->
+            <div class="page-heading__logo">
+                <img src="img/logo.png" alt="logotype of the application">
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="form-box">
+            <div class="form-box--head">
+                <h2 class="form-box__title">Bevesting je aanmelding</h2>
+            </div>
+            <div class="form-box--body">
+                <p class="form-box__desc">
+                    Hier komt informatie over de bevestigingsmail. Hier komt informatie over de bevestigingsmail. Hier komt informatie over de bevestigingsmail.
+                </p>
+            </div>
+            <div class="form-box--footer">
+                <a href="/dashboard.html" role="button" class="form-box__btn next">
+                    <span class="icon"></span>
+                    <span class="text">Naar inloggen</span>
+                </a>
+            </div>
+        </div>
+    </main>
+    <%= _.template(require('./../includes/content-footer.html').default)(data) %>
+</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
