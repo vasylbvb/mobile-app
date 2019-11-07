@@ -4,6 +4,7 @@
   grid-template-columns: 1fr $container-width 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header header header" ". main ." "footer footer footer";
+  overflow-x: hidden;
 
   .action-btn {
     display: inline-block;

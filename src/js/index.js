@@ -18,4 +18,10 @@ jQuery(function($) {
         e.preventDefault();
         $(this).siblings('input[type="text"]').attr("type", "password");
     });
+
+    //Scroll cards with range input on centered layout
+    $("#scrollCardsInp").on("change input", function() {
+        var value = $(this).val();
+        $('.page-cards__row:first-child').css('transform', 'translateX(-'+value*2+'%)');
+    })
 });

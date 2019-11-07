@@ -1,0 +1,244 @@
+<% var data = {
+title: "Centered layout"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="page-grid-container">
+    <%= _.template(require('./../includes/content-header.html').default)(data) %>
+    <main id="main">
+        <div class="page-cards">
+            <div class="page-cards__heading">
+                <div class="back-btn-box">
+                    <a href="#" role="button" class="back-btn">
+                        <span class="icon"></span>
+                        <span class="text">Stap terug</span>
+                    </a>
+                </div>
+                <div class="page-cards__heading-content">
+                    <p class="page-cards__heading-text">Stap <span id="stepNum">3</span></p>
+                    <h1 class="page-cards__heading-title"><span class="underlined">Wat is de balans?</h1>
+                </div>
+            </div>
+            <div class="page-cards__body centered"> <!--add class "centered" here for the centered layout-->
+                <div class="page-cards__row">
+                    <!--Card 1 start-->
+                    <div class="page-cards__col">
+                        <div class="page-card">
+                            <div class="page-card__header">
+                                <h3 class="page-card__header-title">Alleen maar</h3>
+                                <a href="#" role="button" class="page-card__header-btn">
+                                    <span class="icon"></span>
+                                    <span class="text">Selecteren</span>
+                                </a>
+                            </div>
+                            <div class="page-card__body">
+                                <div class="page-card__body-row">
+                                    <div class="page-card__body-col">
+                                        <div class="page-card__body-card">
+                                            <div class="image-box">
+                                                <img src="img/card-1.jpg" alt="card image">
+                                            </div>
+                                            <div class="text-box">
+                                                <ul class="text-box__list">
+                                                    <li>Onbeschikbaar en niet ontvankelijk</li>
+                                                    <li>Niet reageren</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="page-card__body-col">
+                                        <div class="page-card__body-card">
+                                            <div class="image-box">
+                                                <img src="img/card-2.jpg" alt="card image">
+                                            </div>
+                                            <div class="text-box">
+                                                <ul class="text-box__list">
+                                                    <li>Oudergerichte interactie</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="page-card__body-col full">
+                                        <h3 class="page-card__body-subtitle">Soms</h3>
+                                    </div>
+                                    <div class="page-card__body-col">
+                                        <div class="page-card__body-card">
+                                            <div class="image-box">
+                                                <img src="img/card-1.jpg" alt="card image">
+                                            </div>
+                                            <div class="text-box">
+                                                <ul class="text-box__list">
+                                                    <li>Onbeschikbaar en niet ontvankelijk</li>
+                                                    <li>Niet reageren</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="page-card__body-col">
+                                        <div class="page-card__body-card">
+                                            <div class="image-box">
+                                                <img src="img/card-2.jpg" alt="card image">
+                                            </div>
+                                            <div class="text-box">
+                                                <ul class="text-box__list">
+                                                    <li>Oudergerichte interactie</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 1 end-->
+                    <!--Card 2 start-->
+                    <div class="page-cards__col">
+                        <div class="page-card">
+                            <div class="page-card__header">
+                                <h3 class="page-card__header-title">Soms wel</h3>
+                                <a href="#" role="button" class="page-card__header-btn">
+                                    <span class="icon"></span>
+                                    <span class="text">Selecteren</span>
+                                </a>
+                            </div>
+                            <div class="page-card__body">
+                                <div class="page-card__body-row">
+                                    <div class="page-card__body-col">
+                                        <div class="page-card__body-card">
+                                            <div class="image-box">
+                                                <img src="img/card-3.jpg" alt="card image">
+                                            </div>
+                                            <div class="text-box">
+                                                <ul class="text-box__list">
+                                                    <li>Responsief</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="page-card__body-col">
+                                        <div class="page-card__body-card">
+                                            <div class="image-box">
+                                                <img src="img/card-4.jpg" alt="card image">
+                                            </div>
+                                            <div class="text-box">
+                                                <ul class="text-box__list">
+                                                    <li>Kingerichte interactie</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="page-card__body-col full">
+                                        <h3 class="page-card__body-subtitle">Soms</h3>
+                                    </div>
+                                    <div class="page-card__body-col">
+                                        <div class="page-card__body-card">
+                                            <div class="image-box">
+                                                <img src="img/card-3.jpg" alt="card image">
+                                            </div>
+                                            <div class="text-box">
+                                                <ul class="text-box__list">
+                                                    <li>Responsief</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="page-card__body-col">
+                                        <div class="page-card__body-card">
+                                            <div class="image-box">
+                                                <img src="img/card-4.jpg" alt="card image">
+                                            </div>
+                                            <div class="text-box">
+                                                <ul class="text-box__list">
+                                                    <li>Kingerichte interactie</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 2 end-->
+                    <!--Card 3 start-->
+                    <div class="page-cards__col">
+                        <div class="page-card">
+                            <div class="page-card__header">
+                                <h3 class="page-card__header-title">Alleen maar</h3>
+                                <a href="#" role="button" class="page-card__header-btn">
+                                    <span class="icon"></span>
+                                    <span class="text">Selecteren</span>
+                                </a>
+                            </div>
+                            <div class="page-card__body">
+                                <div class="page-card__body-row">
+                                    <div class="page-card__body-col">
+                                        <div class="page-card__body-card">
+                                            <div class="image-box">
+                                                <img src="img/card-1.jpg" alt="card image">
+                                            </div>
+                                            <div class="text-box">
+                                                <ul class="text-box__list">
+                                                    <li>Onbeschikbaar en niet ontvankelijk</li>
+                                                    <li>Niet reageren</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="page-card__body-col">
+                                        <div class="page-card__body-card">
+                                            <div class="image-box">
+                                                <img src="img/card-2.jpg" alt="card image">
+                                            </div>
+                                            <div class="text-box">
+                                                <ul class="text-box__list">
+                                                    <li>Oudergerichte interactie</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="page-card__body-col full">
+                                        <h3 class="page-card__body-subtitle">Soms</h3>
+                                    </div>
+                                    <div class="page-card__body-col">
+                                        <div class="page-card__body-card">
+                                            <div class="image-box">
+                                                <img src="img/card-1.jpg" alt="card image">
+                                            </div>
+                                            <div class="text-box">
+                                                <ul class="text-box__list">
+                                                    <li>Onbeschikbaar en niet ontvankelijk</li>
+                                                    <li>Niet reageren</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="page-card__body-col">
+                                        <div class="page-card__body-card">
+                                            <div class="image-box">
+                                                <img src="img/card-2.jpg" alt="card image">
+                                            </div>
+                                            <div class="text-box">
+                                                <ul class="text-box__list">
+                                                    <li>Oudergerichte interactie</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 3 end-->
+                </div>
+                <div class="page-cards__row">
+                    <div class="page-cards__col">
+                        <label>
+                            <input type="range" id="scrollCardsInp" value="0">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <%= _.template(require('./../includes/content-footer.html').default)(data) %>
+</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
