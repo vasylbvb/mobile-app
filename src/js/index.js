@@ -23,5 +23,5 @@ jQuery(function($) {
     $("#scrollCardsInp").on("change input", function() {
         var value = $(this).val();
         $('.page-cards__row:first-child').css('transform', 'translateX(-'+value*2+'%)');
-    })
+    });
 });

@@ -35,7 +35,8 @@ const config = {
     devtool: "source-map",
     devServer: {
         hotOnly: true,
-        disableHostCheck: true
+        disableHostCheck: true,
+        port: 9090
     },
     mode: "production",
     optimization: {
